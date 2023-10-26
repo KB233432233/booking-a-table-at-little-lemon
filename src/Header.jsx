@@ -1,11 +1,11 @@
-import Logo from './images/Logo.svg';
+import Logo from './images/Logo .svg';
 
 export default function Header() {
     return (
         <header>
             <nav>
+                <img src={Logo} alt="" />
                 <ul>
-                    <li><img src={Logo} alt="" /></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Menu</a></li>

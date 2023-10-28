@@ -1,5 +1,5 @@
-import restauranfood from './images/restauranfood.jpg';
-
+import restauranfood from '../images/restauranfood.jpg';
+import { Link } from 'react-router-dom';
 
 export default function LandingSection() {
     return (
@@ -8,7 +8,7 @@ export default function LandingSection() {
                 <h2>Little Lemon</h2>
                 <h4>Chicago</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>Reserve a table</button>
+                <Link to='/BookingPage'>Reserve a table</Link>
             </div>
             <div className='seconddiv'><img src={restauranfood} alt='' /></div>
         </section>

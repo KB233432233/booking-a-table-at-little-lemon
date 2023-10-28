@@ -1,6 +1,6 @@
-import bruchetta from './images/bruchetta.svg';
-import greek_salad from './images/greek_salad.jpg';
-import lemon_dessert from './images/lemon_dessert.jpg';
+import bruchetta from '../images/bruchetta.svg';
+import greek_salad from '../images/greek_salad.jpg';
+import lemon_dessert from '../images/lemon_dessert.jpg';
 
 
 
@@ -14,7 +14,7 @@ const Card = ({ img, heading, price, description }) => {
                 <span>{price}</span>
             </div>
             <p className="desc">{description}</p>
-            <span>Order a delivery</span>
+            <span className='order'>Order a delivery</span>
         </div>
     )
 

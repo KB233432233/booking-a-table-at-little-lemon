@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -50,7 +54,7 @@ header nav ul a {
   font-weight: 100;
 }
 
-.Landing .firstdiv button {
+.Landing .firstdiv a {
   width: 200px;
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
@@ -58,10 +62,15 @@ header nav ul a {
   background-color: #f4ce14;
   font-weight: 600;
   margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
   cursor: pointer;
 }
 
-.Landing .firstdiv button:hover,
+.Landing .firstdiv a:hover,
 .Specials .specials-heading button:hover {
   box-shadow:  -2px 3px 20px 12px #28ba89 ;
 }
@@ -94,6 +103,7 @@ header nav ul a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .Specials .specials-heading h2 {
@@ -117,8 +127,13 @@ header nav ul a {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  transform: translateX(25px);
+  grid-template-columns: repeat(3,300px);
+}
+
+@media(max-width: 768px) {
+  .Specials .card-container {
+    grid-template-columns: 300px;
+  }
 }
 
 .Specials .card {
@@ -127,6 +142,8 @@ header nav ul a {
     flex-direction: column;
     border: 1px solid black;
     border-radius: 10px;
+    height: 445px;
+    position: relative;
 }
 
 .Specials .card img {
@@ -140,4 +157,37 @@ header nav ul a {
   justify-content: space-between;
   width: 75%;
   align-items: center;
+  margin-left: 10px;
+}
+
+.Specials .card .card-head-and-price span {
+  color: #f4ce14;
+}
+
+.Specials .card .desc {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0 10px 0 10px;
+  font-weight: 100;
+}
+
+.Specials .card .order {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-weight: 700;
+}
+
+.Testimonials {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.Testimonials .testi-con {
+  display: grid;
+    grid-template-columns: repeat(4,200px);
+    height: 200px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
 }

@@ -1,20 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import SpecialsSection from './SpecialsSection';
-import TestimonialsSection from './TestimonialsSection';
-import Footer from './Footer';
-import LandingSection from './LandingSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import HomePage from './components/HomePage';
+import HomePageLayout from './components/HomePageLayout'
+import BookingPage from './components/BookingPage';
+import AboutSection from './components/AboutSection';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Header />
       <main>
-        <LandingSection />
-        <SpecialsSection />
-        <TestimonialsSection />
-        <Footer />
+        <Routes>
+          <Route path='/' element={<HomePageLayout />} >
+            <Route index element={<HomePage />} />
+            <Route path='/BookingPage' element={<BookingPage />} />
+            <Route path='/Testimonials' element={<TestimonialsSection />} />
+            <Route path='/About' element={<AboutSection />} />
+          </Route>
+        </Routes>
       </main>
     </>
   );

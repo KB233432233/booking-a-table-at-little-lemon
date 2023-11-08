@@ -1,4 +1,4 @@
-import Header from "./Header";
+
 import LandingSection from "./LandingSection";
 import SpecialsSection from "./SpecialsSection";
 

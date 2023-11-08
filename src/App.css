@@ -97,6 +97,7 @@ header nav ul a {
 
 .Specials {
   margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .Specials .specials-heading {
@@ -190,4 +191,79 @@ header nav ul a {
     justify-content: center;
     gap: 40px;
     margin-top: 50px;
+}
+
+.booking-form {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.booking-form input,
+.booking-form select {
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid gray;
+}
+
+.booking-form input[type=submit] {
+  background-color: #f4ce14;
+  color: black;
+  font-weight: 600;
+}
+
+.booking-form input[type=submit]:hover {
+  box-shadow: -1px 0px 20px 8px #28ba89;
+  cursor: pointer;
+  border: none;
+}
+
+.confirmed {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+footer {
+  display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+    gap: 5rem;
+    margin-top: 100px;
+}
+
+footer article:first-of-type ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer article:first-of-type ul a {
+  text-decoration: none;
+  color: black;
+}
+
+footer article:first-of-type ul a:hover {
+  text-decoration: underline;
+  color: #f4ce14;
+}
+
+.About {
+  display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 25px;
+    justify-content: center;
+}
+
+.About div:first-child {
+  text-align: center;
+}
+
+.booking-form .choose-date {
+  margin-top: 10px;
+  display: block;
+  color: red;
 }

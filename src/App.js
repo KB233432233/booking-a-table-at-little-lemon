@@ -4,8 +4,9 @@ import HomePage from './components/HomePage';
 import HomePageLayout from './components/HomePageLayout'
 import BookingPage from './components/BookingPage';
 import AboutSection from './components/AboutSection';
-import Confirmed from './components/Confirmed'
-  ; import { Route, Routes, useNavigate } from 'react-router-dom';
+import Confirmed from './components/Confirmed';
+import Reservations from './components/Reservations';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path='Confirmed' element={<Confirmed />} />
             <Route path='Testimonials' element={<TestimonialsSection />} />
             <Route path='About' element={<AboutSection />} />
+            <Route path='Reservations' element={<Reservations data={state.state2} />} />
           </Route>
         </Routes>
       </main>

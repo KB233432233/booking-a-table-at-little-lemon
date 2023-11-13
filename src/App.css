@@ -267,3 +267,9 @@ footer article:first-of-type ul a:hover {
   display: block;
   color: red;
 }
+
+.reser {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}

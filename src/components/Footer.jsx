@@ -10,11 +10,11 @@ export default function Footer() {
                 <h3>Doormat Navigation</h3>
                 <ul>
                     <li><img src={Logo} alt="" /></li>
-                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='.'>Home</Link></li>
                     <li><Link to='About'>About</Link></li>
                     <li><Link to='Menu'>Menu</Link></li>
                     <li><Link to='Reservations'>Reservations</Link></li>
-                    <li><Link to='Order-Online'>Order online</Link></li>
+                    <li><Link to='BookingPage'>Order online</Link></li>
                     <li><Link to='Login'>Login</Link></li>
                 </ul>
             </article>

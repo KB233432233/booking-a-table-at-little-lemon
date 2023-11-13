@@ -18,6 +18,9 @@ export default function BookingPageForm({ times, dispatch }) {
             setNotSeted(true);
             return;
         }
+
+        if (numberOfGuests > 10) return;
+
         const state = {
             date: date,
             time: time,
@@ -48,7 +51,10 @@ export default function BookingPageForm({ times, dispatch }) {
                     })}
                 </select>
                 <label htmlFor="guests">Number of guests</label>
-                <input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={numberOfGuests} onChange={(e) => setNumberOfGuests(e.target.value)} />
+                <input type="number" placeholder="1" min="1" max="10" id="guests" name="guests"
+                    value={numberOfGuests}
+                    onChange={(e) => setNumberOfGuests(e.target.value)} />
+                {numberOfGuests > 10 ? <span className="choose-date">no more than 10 guests per table</span> : null}
                 <label htmlFor="occasion">Occasion</label>
                 <select id="occasion" name='occasion' value={occasion} onChange={(e) => setOccasion(e.target.value)}>
                     <option>Birthday</option>

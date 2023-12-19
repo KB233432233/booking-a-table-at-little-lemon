@@ -1,7 +1,7 @@
 import bruchetta from '../images/bruchetta.svg';
 import greek_salad from '../images/greek_salad.jpg';
 import lemon_dessert from '../images/lemon_dessert.jpg';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -27,7 +27,7 @@ export default function SpecialsSection() {
         <section className="Specials">
             <div className="specials-heading">
                 <h2>Specials</h2>
-                <button>Online Menu</button>
+                <Link to='BookingPage'>Online Menu</Link>
             </div>
             <div className="card-container">
                 <Card img={greek_salad} heading={'Greek salad'}

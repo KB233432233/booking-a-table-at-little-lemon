@@ -71,7 +71,7 @@ header nav ul a {
 }
 
 .Landing .firstdiv a:hover,
-.Specials .specials-heading button:hover {
+.Specials .specials-heading a:hover {
   box-shadow:  -2px 3px 20px 12px #28ba89 ;
 }
 
@@ -112,7 +112,7 @@ header nav ul a {
     font-size: 27px;
 }
 
-.Specials .specials-heading button {
+.Specials .specials-heading a {
     width: 200px;
     padding: 10px 15px 10px 15px;
     border-radius: 10px;
@@ -120,7 +120,11 @@ header nav ul a {
     background-color: #f4ce14;
     font-weight: 600;
     cursor: pointer;
-    height: 50px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Specials .card-container {
@@ -268,8 +272,18 @@ footer article:first-of-type ul a:hover {
   color: red;
 }
 
-.reser {
+.reser,
+.nrm {
   display: flex;
   flex-direction: column;
   place-items: center;
+}
+
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 20px;
 }

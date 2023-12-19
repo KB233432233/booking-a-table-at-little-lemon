@@ -8,6 +8,8 @@ import Confirmed from './components/Confirmed';
 import Reservations from './components/Reservations';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
+import Menu from './components/Menu';
+import Login from './components/Login';
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
             <Route path='Testimonials' element={<TestimonialsSection />} />
             <Route path='About' element={<AboutSection />} />
             <Route path='Reservations' element={<Reservations data={state.state2} />} />
+            <Route path='Menu' element={<Menu />} />
+            <Route path='Login' element={<Login />} />
           </Route>
         </Routes>
       </main>
